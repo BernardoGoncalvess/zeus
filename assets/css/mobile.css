@@ -12,12 +12,6 @@ html {
 
 /*
 *
-* Typography
-*
-*/
-
-/*
-*
 * Mobile styles
 *
 */
@@ -38,6 +32,11 @@ html {
     padding-bottom: 41px;
   }
 
+  footer {
+    padding-top: 41px;
+    padding-bottom: 20px;
+  }
+  /*typography*/
   h1 {
     font-family: var(--primaryFont);
     font-size: 2.2rem;
@@ -83,6 +82,7 @@ html {
     font-family: var(--primaryFont);
     font-size: 2rem;
     font-weight: lighter !important;
+    padding: 10px 0 0 0;
   }
 
   .navigation .email {
@@ -129,6 +129,11 @@ html {
     align-items: flex-start;
     flex-direction: column;
     padding-top: 41px;
+  }
+
+  .aboutSection .about-me p {
+    margin: 0;
+    padding: 0;
   }
 
   /*stack*/
@@ -193,7 +198,7 @@ html {
   }
 
   .projectsSection header {
-    padding-bottom: 25Spx;
+    padding-bottom: 5px;
   }
 
   .projectsSection .project1 {
@@ -230,6 +235,10 @@ html {
     padding-left: 10px;
   }
 
+  .projectsSection .project1 .description h3 {
+    padding-left: 8px;
+  }
+
   .projectsSection .project1 .description p {
     margin-top: 0;
   }
@@ -240,6 +249,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding-bottom: 10px;
   }
 
   .projectsSection .project2 {
@@ -263,6 +273,10 @@ html {
     padding-left: 5px;
   }
 
+  .projectsSection .project2 .description h3 {
+    padding-left: 8px;
+  }
+
   .projectsSection .project2 .description p {
     margin-top: 0;
   }
@@ -281,6 +295,15 @@ html {
     border-radius: 15%;
   }
 
+  .projectsSection .project2 .description .projectLinks {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+
   .projectsSection .project3 {
     display: flex;
     align-items: center;
@@ -291,6 +314,7 @@ html {
     border-radius: 15px;
     width: 100%;
     height: 130px;
+    margin-bottom: 41px;
   }
 
   .projectsSection .project3 .img {
@@ -315,6 +339,10 @@ html {
     padding-left: 10px;
   }
 
+  .projectsSection .project3 .description h3 {
+    padding-left: 8px;
+  }
+
   .projectsSection .project3 .description p {
     margin-top: 0;
   }
@@ -325,5 +353,136 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding-bottom: 10px;
+  }
+
+  /*hobbies*/
+
+  .hobbySection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 41px;
+  }
+
+  .hobbySection .hobby {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 140px;
+    background-color: #dadbd5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  .hobby .hobbyImg img {
+    border-radius: 15%;
+    padding-left: 6px;
+    padding-top: 2px;
+  }
+
+  .hobbySection .hobby .hobbyDescription {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .hobbySection .hobby .hobbyDescription .hobbyLink {
+    margin-top: 10px;
+  }
+
+  .hobbySection .hobby .hobbyDescription h3,
+  p,
+  a {
+    margin: 0;
+    padding: 10px 5px 0 10px;
+  }
+
+  .bottom {
+    margin-bottom: 41px;
+  }
+
+  /*contact*/
+
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 41px;
+    width: 100%;
+  }
+
+  .contactSection .contactBoxs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 41px;
+  }
+
+  .contactSection .contactBoxs input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    background-color: #dadbd5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .contactSection .contactBoxs #message {
+    padding-bottom: 150px;
+    text-align: start;
+  }
+
+  ::placeholder {
+    color: var(--grey02);
+    font-family: var(--secondaryFont);
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  /*footer*/
+  .pageFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pageFooter p {
+    font-family: var(--secondaryFont);
+    font-weight: 300;
+    color: var(--grey02);
+    padding: 0;
+    margin: 0;
+  }
+
+  .pageFooter a {
+    text-decoration: underline;
+    text-decoration-color: var(--grey02);
+    text-underline-offset: 3px;
+    font-family: var(--secondaryFont);
+    font-weight: 300;
+    color: var(--grey02);
+    padding: 0;
+    margin: 0;
+  }
+
+  .socials p {
+    font-family: var(--secondaryFont);
+    font-weight: 300;
+    color: var(--grey02);
+    padding: 0;
+    margin: 0;
   }
 }
