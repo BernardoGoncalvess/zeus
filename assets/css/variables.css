@@ -1,0 +1,9 @@
+/* Project Variables */
+
+:root {
+  --grey01: #dadbd5;
+  --grey02: #6c6c6c;
+  --black: #000000;
+  --primaryFont: "Inter", sans-serif;
+  --secondaryFont: "Roboto", sans-serif;
+}

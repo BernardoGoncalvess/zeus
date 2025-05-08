@@ -1,0 +1,329 @@
+@import url(./variables.css);
+
+/*
+*
+* Global styles
+*
+*/
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+/*
+*
+* Typography
+*
+*/
+
+/*
+*
+* Mobile styles
+*
+*/
+
+@media (max-width: 480px) {
+  /*Global*/
+  html {
+    background-color: #dadbd5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    padding: 0 20px;
+  }
+
+  section {
+    border-bottom: 1px solid var(--grey02);
+    padding-bottom: 41px;
+  }
+
+  h1 {
+    font-family: var(--primaryFont);
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: var(--primaryFont);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black);
+  }
+
+  h3 {
+    font-family: var(--primaryFont);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--black);
+  }
+
+  p {
+    font-family: var(--secondaryFont);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--black);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--grey02);
+  }
+
+  /*Header*/
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+  }
+
+  .navigation .logo p {
+    font-family: var(--primaryFont);
+    font-size: 2rem;
+    font-weight: lighter !important;
+  }
+
+  .navigation .email {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navigation .email svg {
+    stroke: var(--grey02);
+  }
+
+  /*landing*/
+  .profileImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .profileImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .profileImage i {
+    margin-top: 5px;
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+  }
+
+  .profileImage h1 {
+    text-align: center;
+    margin: 0;
+  }
+
+  /*about me*/
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 41px;
+  }
+
+  /*stack*/
+  .stackSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 41px;
+  }
+
+  .stackSection .stack {
+    padding-bottom: 20px;
+  }
+  .stackSection .frontend {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  .stackSection .frontend h3 {
+    padding-right: 20px;
+    margin: 0;
+  }
+
+  .stackSection .backend {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 15px;
+    margin: 0;
+    height: 30px;
+  }
+
+  .stackSection .tools {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+  }
+
+  .stackSection .tools h3 {
+    padding-right: 53px;
+    margin: 0;
+  }
+
+  /*projects*/
+  .projectsSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 41px;
+  }
+
+  .projectsSection header {
+    padding-bottom: 25Spx;
+  }
+
+  .projectsSection .project1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dadbd5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    width: 100%;
+    height: 130px;
+  }
+
+  .projectsSection .project1 .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  .projectsSection .project1 .img img {
+    width: 122px;
+    height: 122px;
+    border-radius: 15%;
+  }
+
+  .projectsSection .project1 .description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+
+  .projectsSection .project1 .description p {
+    margin-top: 0;
+  }
+
+  .projectsSection .project1 .description .projectLinks {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .projectsSection .project2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dadbd5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    width: 100%;
+    height: 130px;
+  }
+
+  .projectsSection .project2 .description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+
+  .projectsSection .project2 .description p {
+    margin-top: 0;
+  }
+
+  .projectsSection .project2 .img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  .projectsSection .project2 .img img {
+    width: 122px;
+    height: 122px;
+    border-radius: 15%;
+  }
+
+  .projectsSection .project3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dadbd5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    width: 100%;
+    height: 130px;
+  }
+
+  .projectsSection .project3 .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  .projectsSection .project3 .img img {
+    width: 122px;
+    height: 122px;
+    border-radius: 15%;
+  }
+
+  .projectsSection .project3 .description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+
+  .projectsSection .project3 .description p {
+    margin-top: 0;
+  }
+
+  .projectsSection .project3 .description .projectLinks {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
