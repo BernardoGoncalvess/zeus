@@ -432,9 +432,9 @@ html {
   .contactSection .contactBoxs input {
     width: 100%;
     height: 40px;
+    padding: 0;
     border-radius: 10px;
     border: none;
-    padding-left: 10px;
     background-color: #dadbd5;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
@@ -449,6 +449,7 @@ html {
     font-family: var(--secondaryFont);
     font-size: 1.3rem;
     font-weight: 300;
+    padding-left: 10px;
   }
 
   /*footer*/
